@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ingenutria.github.io/sitemap.xml
