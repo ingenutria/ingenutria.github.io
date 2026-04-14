@@ -8,21 +8,22 @@
     <meta name="robots" content="index, follow" />
 
     <!-- :::::::::::::::::::::::::::::::::: SEO :::::::::::::::::::::::::::::::::: -->
-    <title>Consultas virtuales de Nutrición | Nutricionista Online</title>
-    <meta name="description"
-        content="Agenda tu consulta virtual de nutrición con atención personalizada, 100% online. Mejora tus hábitos alimentarios desde casa." />
+    <title>Laura Sofía Cruz Martínez | IngeNutria</title>
+    <meta name="description" 
+        content="Nutricionista profesional Laura Sofía Cruz Martínez. Planes de alimentación personalizados, nutrición deportiva y consultas 100% virtuales en Colombia.">
     <link rel="canonical" href="https://ingenutria.github.io/" />
 
     <meta name="geo.region" content="CO" />
     <meta name="geo.placename" content="Colombia" />
 
     <!-- ::::::::::::::::::::::::::::::: Open Graph :::::::::::::::::::::::::::::: -->
-    <meta property="og:title" content="Consultas virtuales de Nutrición"/>
+    <meta property="og:title" content="Consultas virtuales de Nutrición" />
     <meta property="og:description" content="Nutrición personalizada, 100% online. Agenda tu cita fácilmente." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ingenutria.github.io/home.html" />
+    <meta property="og:url" content="https://ingenutria.github.io/" />
     <meta property="og:image" content="https://ingenutria.github.io/assets/Logo_Square.png" />
 
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -32,14 +33,73 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/footer.css" />
 
-    <script defer src="scripts/main.js"></script>
+    <!-- JSON + LD -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "MedicalBusiness",
+          "name": "IngeNutria - Laura Sofía Cruz Martínez",
+          "image": "https://ingenutria.github.io/assets/ProfilePic.jpeg",
+          "@id": "https://ingenutria.github.io/home",
+          "url": "https://ingenutria.github.io/home",
+          "telephone": "+573006215819",
+          "priceRange": "$120.000 - $200.000 COP",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CO",
+            "addressLocality": "Medellín" 
+          },
+          "medicalSpecialty": "Dietetic",
+          "founder": {
+            "@type": "Person",
+            "name": "Laura Sofía Cruz Martínez",
+            "jobTitle": "Nutricionista y Dietista",
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Universidad CES"
+            }
+          },
+          "offers": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Consulta Nutricional Inicial",
+                "description": "Valoración nutricional completa y plan alimentario personalizado."
+              },
+              "price": "150000",
+              "priceCurrency": "COP"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Consulta de Seguimiento",
+                "description": "Ajustes de plan nutricional y mejora de adherencia."
+              },
+              "price": "120000",
+              "priceCurrency": "COP"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Paquete 2 Consultas",
+                "description": "Ajustes de plan nutricional y mejora de adherencia."
+              },
+              "price": "200000",
+              "priceCurrency": "COP"
+            }
+          ]
+        }
+    </script>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="/assets/Logo_Horizontal.png" width="200px">
+                <img src="/assets/Logo_Horizontal.png" width="200px" alt="IngeNutria - Logo Nutricionista Laura Sofía Cruz">
             </div>
             <ul>
                 <li><a href="#home" data-nav="#home">Inicio</a></li>
@@ -54,10 +114,11 @@
 
     <main id="home">
         <section class="main-section">
-            <img class="img-banner-sabroso" src="/assets/Banner_Sabroso.jpeg" alt="">
+            <img class="img-banner-img" src="/assets/Banner_img.jpeg" alt="IngeNutria - Banner Nutricionista Laura Sofía Cruz">
             <div class="section-description">
+                <h1 style="display: none;">Nutricionista Dietista Online y Planes de Alimentación Personalizados</h1>
                 <p class="rubik-font-ligth">Consultas virtuales de Nutrición personalizadas</p>
-                <h1 class="rubik-font-bold">Mejora tu alimentación desde casa con acompañamiento profesional.</h1>
+                <h2 class="rubik-font-bold">Mejora tu alimentación desde casa con acompañamiento profesional.</h2>
                 <div class="benefits rubik-font-ligth">
                     <span>✔️ 100% Online</span>
                     <span>✔️ Plan personalizado</span>
@@ -85,20 +146,10 @@
                     </p>
                 </div>
                 <div class="img-wrapper">
-                    <img src="/assets/ProfilePic.jpeg" alt="" class="photo-placeholder">
+                    <img src="/assets/ProfilePic.jpeg" class="photo-placeholder" alt="Laura Sofía Cruz Martínez, Nutricionista egresada de la Universidad CES">
                 </div>
             </div>
         </section>
-
-        <!-- <section class="hero">
-
-            <div class="hero-actions">
-                <button data-nav="#agenda">Agendar consulta</button>
-                <a href="https://wa.me/57XXXXXXXXXX" target="_blank" rel="noopener">
-                    WhatsApp
-                </a>
-            </div>
-        </section> -->
 
         <section id="consultas">
             <h2>Tipos de consulta</h2>
@@ -110,7 +161,7 @@
                         rutina + recetas prácticas</p>
                     <p><strong>Duración:</strong> 60 min</p>
                     <p><strong>Modalidad:</strong> Virtual</p>
-                    <p><strong>Precio:</strong> $140.000</p>
+                    <p><strong>Precio:</strong> $150.000</p>
                     <button data-nav="#agenda">Agendar</button>
                 </article>
 
@@ -120,16 +171,15 @@
                         adherencia, resolución de dudas especificas.</p>
                     <p><strong>Duración:</strong> 45 min</p>
                     <p><strong>Modalidad:</strong> Virtual</p>
-                    <p><strong>Precio:</strong> $100.000</p>
+                    <p><strong>Precio:</strong> $120.000</p>
                     <button data-nav="#agenda">Agendar</button>
                 </article>
 
                 <article class="consulta-card">
                     <h3>Paquete de 2 seguimientos</h3>
                     <p>Reserva tus seguimientos de manera anticipada y con un espectacular descuento</p>
-                    <p><strong>Duración:</strong> N/A</p>
                     <p><strong>Modalidad:</strong> Virtual</p>
-                    <p><strong>Precio:</strong> $180.000</p>
+                    <p><strong>Precio:</strong> $200.000</p>
                     <button data-nav="#agenda">Agendar</button>
                 </article>
             </div>
@@ -150,29 +200,6 @@
                 </iframe>
             </div>
         </section>
-
-        <section id="contacto">
-
-
-
-
-
-
-
-
-            <!-- <h2>Contacto</h2>
-            <p>¿Tienes dudas antes de agendar?</p>
-
-            <ul>
-                <li>📧 ingenutria@gmail.com</li>
-                <li>
-                    📱
-                    <a href="https://wa.me/57XXXXXXXXXX" target="_blank" rel="noopener">
-                        WhatsApp
-                    </a>
-                </li>
-            </ul> -->
-        </section>
     </main>
 
     <footer>
@@ -184,7 +211,7 @@
                     </a>
                 </li>
                 <li >
-                    <a href="https://www.instagram.com/Ingenutria/" target="_blank" rel="noreferrer noopener" aria-label="Instagram">
+                    <a href="https://www.instagram.com/ingenutria/" target="_blank" rel="noreferrer noopener" aria-label="Instagram">
                         <img src="https://static.wixstatic.com/media/11062b_ca1d837ce7194421b781ee7384061a8e~mv2.png" alt="Instagram" class="footer-icon">
                     </a>
                 </li>
@@ -196,7 +223,7 @@
             </ul>
             <span>LLamanos al +57 300 6215 819</span>
         </div>
-        <p>© 2026 – Ingenutria | Consultas virtuales de Nutrición</p>
+        <p>© 2026 - Ingenutria | Consultas virtuales de Nutrición</p>
         <p>
             <a href="#">Aviso legal</a> |
             <a href="#">Política de privacidad</a>

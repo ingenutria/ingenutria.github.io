@@ -21,7 +21,7 @@ section:not(.main-section){
   padding: 0px;
 }
 
-.img-banner-sabroso {
+.img-banner-img {
   height: 80vh;
   mask-image: linear-gradient(
     to right,
@@ -44,6 +44,12 @@ section:not(.main-section){
 }
 
 .section-description h1 {
+  font-size: 60px;
+  line-height: 52px;
+  margin: 40px 0px;
+}
+
+.section-description h2 {
   font-size: 60px;
   line-height: 52px;
   margin: 40px 0px;
@@ -197,7 +203,7 @@ section:not(.main-section){
     font-size: 1.9rem;
   }
 
-  .img-banner-sabroso {
+  .img-banner-img {
     display: none;
   }
 
